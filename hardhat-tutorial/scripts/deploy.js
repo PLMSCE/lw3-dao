@@ -17,9 +17,9 @@ async function main() {
     fakeNftMarketplace.address,
     CRYPTODEVS_NFT_CONTRACT_ADDRESS,
     {
-      // This assumes your account has at least 1 ETH in it's account
+      // This assumes your account has at least .5 ETH in it's account
       // Change this value as you want
-      value: ethers.utils.parseEther("1"),
+      value: ethers.utils.parseEther(".5"),
     }
   );
   await cryptoDevsDAO.deployed();
